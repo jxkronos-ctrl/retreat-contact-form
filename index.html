@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>Retreat Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youth Retreat Registration Form">
+    <link rel="stylesheet" href="styles.css">
+ </head>   
+ <body>
+    <h1>Youth Retreat 2026 Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Contact information</legend>
+        <label for="full-anme">Full-Name:</label>
+        <input type="text" id="full-name" name="fullname" required placeholder="John Doe">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com">
+        <label for="telephone">Phone Number:</label>
+        <input type="tel" id="telephone" name="telephone" required placeholder="000-000-0000">
+        <label for="home-tel">Home Phone Number:</label>
+        <input type="tel" id="home-tel" name="home-phone-number" required placeholder="000-000-0000">
+        <label for="d.o.b">Date of Birth:</label>
+        <input type="date" id="d.o.b" name="Date-of-birth" required placeholder="00/00/0000">
+     </fieldset>
+        <fieldset>
+            <legend>Emergency Contact information</legend>
+            <label for="emergency-fullname">Full-Name:</label>
+            <input type="text" id="emergency-fullname" name="emergency-contact-name" required placeholder="john doe">
+            <label for="emergency-tel">Phone Number:</label>
+            <input type="tel" id="emergency-tel" name="emergency-contact-number" required placeholder="000-000-0000">
+            <label for="relationship">Relationship:</label>
+            <select>
+                <option>(Select One)</option>
+                <option>Parent</option>
+                <option>Grand Parent</option>
+                <option>Legal Guardian</option>
+                <option>Spouse</option>
+                <option>Friend</option>
+                <option>Other</option>
+            </select>
+        </fieldset>
+ </body>
