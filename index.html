@@ -40,4 +40,55 @@
                 <option>Other</option>
             </select>
         </fieldset>
+        <h2>Questionaire</h2>
+        <p><em>Please fill all relevent sections.</em></p>
+        <fieldset>
+            <legend>Do you currently have a home Church that you attend?</legend>
+            <label for="home-church-yes">Yes</label>
+             <input type="radio" id="home-church-yes" name="home-church" value="yes" required>
+             <label for="home-church-no">No</label>
+             <input type="radio" id="home-church-no" name="home-church" value="no">
+             </fieldset>
+            <label for="if-yes">If yes, what is the name of your home church?</label>
+            <input type="text" id="if-yes" name="if-yes">
+            <label for="if-no">If no, why not?</label>
+            <textarea id="if-no" name="if-no" placeholder="Please provide a brief explanation" rows="3" cols="45"></textarea>
+            <fieldset>
+                <label for="church-attendance">How often do you attend Church?</label>
+                <select id="church-attendance">
+                    <option>(select one)</option>
+                    <option>Weekly</option>
+                    <option>2x per month</option>
+                    <option>1x per month</option>
+                    <option>Less than 1x per month</option>
+                </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Are you involved in any ministries?</legend>
+                <label for="active-yes">Yes</label>
+                <input type="radio" id="active-yes" name="activity" value="yes"required>
+                <label for="active-no">No</label>
+                <input type="radio" id="active-no" name="activity" value="no">
+                <label for="active-details">If yes, please share your ministry experienc below.</label>
+                <textarea id="active-details" name="activity-details" row="3" cols="45"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you have a personal relationship with Jesus Christ?</legend>
+                    <label for="saved-yes">Yes</label>
+                    <input type="radio" id="saved-yes" name="salvation" value="yes" required>
+                    <label for="saved-no">No</label>
+                    <input type="radio" id="saved-no" name="salvation" value="no">
+                </fieldset>
+                <fieldset>
+                    <legend>Are you Baptised?</legend>
+                    <label for="baptism-yes">Yes</label>
+                    <input type="radio" id="baptism-yes" name="baptism" value="yes" required>
+                    <label for="baptism-no">No</label>
+                    <input type="radio" id="baptism-no" name="baptism" value="no">
+                </fieldset>
+
+               
+            
+        
+              
  </body>
