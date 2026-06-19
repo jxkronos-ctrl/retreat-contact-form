@@ -10,9 +10,9 @@
  <body>
     <h1>Youth Retreat 2026 Registration Form</h1>
     <form>
-      <fieldset>
-        <legend>Contact information</legend>
-        <label for="full-anme">Full-Name:</label>
+      <fieldset id="contact-section">
+        <legend id="contact-info">Contact information</legend>
+        <label for="full-name">Full-Name:</label>
         <input type="text" id="full-name" name="fullname" required placeholder="John Doe">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required placeholder="johndoe@gmail.com">
@@ -31,29 +31,30 @@
             <input type="tel" id="emergency-tel" name="emergency-contact-number" required placeholder="000-000-0000">
             <label for="relationship">Relationship:</label>
             <select>
-                <option>(Select One)</option>
-                <option>Parent</option>
-                <option>Grand Parent</option>
-                <option>Legal Guardian</option>
-                <option>Spouse</option>
-                <option>Friend</option>
-                <option>Other</option>
+                <option value="" disabled selected>Select one</option>
+                <option value="parent">Parent</option>
+                <option value="grand-parent">Grand Parent</option>
+                <option value="legal guardian">Legal Guardian</option>
+                <option value="spouse">Spouse</option>
+                <option value="friend">Friend</option>
+                <option value="other">Other</option>
             </select>
         </fieldset>
         <h2>Questionaire</h2>
-        <p><em>Please fill all relevent sections.</em></p>
+        <p class="questionaire-prompt"><em>Please fill all relevent sections.</em></p>
         <fieldset>
             <legend>Do you currently have a home Church that you attend?</legend>
             <label for="home-church-yes">Yes</label>
              <input type="radio" id="home-church-yes" name="home-church" value="yes" required>
              <label for="home-church-no">No</label>
              <input type="radio" id="home-church-no" name="home-church" value="no">
-             </fieldset>
             <label for="if-yes">If yes, what is the name of your home church?</label>
             <input type="text" id="if-yes" name="if-yes">
             <label for="if-no">If no, why not?</label>
             <textarea id="if-no" name="if-no" placeholder="Please provide a brief explanation" rows="3" cols="45"></textarea>
+            </fieldset>
             <fieldset>
+                <legend>Church Attendance</legend>
                 <label for="church-attendance">How often do you attend Church?</label>
                 <select id="church-attendance">
                     <option>(select one)</option>
@@ -70,7 +71,7 @@
                 <label for="active-no">No</label>
                 <input type="radio" id="active-no" name="activity" value="no">
                 <label for="active-details">If yes, please share your ministry experienc below.</label>
-                <textarea id="active-details" name="activity-details" row="3" cols="45"></textarea>
+                <textarea id="active-details" name="activity-details" rows="3" cols="45"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Do you have a personal relationship with Jesus Christ?</legend>
@@ -90,19 +91,63 @@
                     <legend>Retreat Specific Questions</legend>
                     <label for="hearsay">How did you hear about us?</label>
                     <select id="hearsay" name="hearsay">
-                        <option>(select one)</option>
-                        <option>Social Media</option>
-                        <option>Friend/Family Member</option>
-                        <option>Newspaper</option>
-                        <option>Church Service</option>
-                        <option>Other</option>
+                        <option value=""disabled selected>Selx ct one</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="friend-family">Friend/Family Member</option>
+                        <option value="newspaper">Newspaper</option>
+                        <option value="church-services">Church Service</option>
+                        <option value="other">Other</option>
                     </select>
-                    <label for="first-time">Will this be your first Youth Retreat?</label>
-                    <input type="radio" id="first-time" name="first-time-attendee-">
+                    <fieldset>
+                        <legend>Will this be your first Youth Retreat?</legend>
+                    <label for="first-time-yes">Yes</label>
+                    <input type="radio" id="first-time-yes" name="first-time-attendee" value="yes" required>
+                    <label for="first-time-no">No</label>
+                    <input type="radio" id="first-time-no" name="first-time-attendee" value="no">
+                    <fieldset>
+                        <legend>Will you be driving or boarding our coach bus?</legend>
+                        <select id=transportation name="transportation">
+                            <option value="" disabled selected>Select one</option>
+                            <option value="transport-method-1">Driving</option>
+                            <option value="transport-method-2">Coach Bus</option>
+                        </select>
+                        </fieldset>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Lodging arrangements</legend>
+                        <p><em>Towels, sheets, pillows, and toiletries will be provided for all attendees</em></p>
+                        <label for="relationship-status">Are you married or single?</label>
+                        <select id="relationship-status" name="relationship-status">
+                            <option value="" disabled selected>Select one</option>
+                            <option>Married</option>
+                            <option>Single</option>
+                            <option>Complicated</option>
+                        </select>
+                        <fieldset>
+                            <legend>If married, do you prefer lodging together with your spouse and/or kids?</legend>
+                        <label for="if-married"></label>
+                        <select id="lodging-arrangements" name="lodging-arrangments">
+                            <option value="" disabled selected>Select one</option>
+                            <option>family lodging</option>
+                            <option>individual lodging</option>
+                        </select>
+                        <fieldset>
+                            <legend>How many kids do you have if applicable?</legend>
+                            <input type="number" id="kids" name="kids">
+                        </fieldset>
+                    </fieldset>
                 </fieldset>
-
-               
-            
-        
-              
+                <fieldset>
+                    <legend>Do you have allergies to any of the following?</legend>
+                    <label for="food-allergy1">seafood/shell fish</label>
+                    <input type="checkbox" id="food-allergy1" name="food-allergy">
+                    <label for="food-allergy2">nuts and/or peanuts</label>
+                    <input type="checkbox" id="food-allergy2" name="food-allergy2">
+                    <label for="food-allergy3">Dairy</label>
+                    <input type="checkbox" id="food-allergy3" name="food-allergy3">
+                </fieldset>
+                <button type="submit">Submit</button>
+                </form>             
  </body>
+ </html>
