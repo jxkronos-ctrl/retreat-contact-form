@@ -23,7 +23,7 @@
         <label for="d.o.b">Date of Birth:</label>
         <input type="date" id="d.o.b" name="Date-of-birth" required placeholder="00/00/0000">
      </fieldset>
-        <fieldset>
+        <fieldset id="emergency-contact">
             <legend>Emergency Contact information</legend>
             <label for="emergency-fullname">Full-Name:</label>
             <input type="text" id="emergency-fullname" name="emergency-contact-name" required placeholder="john doe">
@@ -39,7 +39,7 @@
                 <option value="friend">Friend</option>
                 <option value="other">Other</option>
             </select>
-        </fieldset>
+        </fieldset id="questionaire">
         <h2>Questionaire</h2>
         <p class="questionaire-prompt"><em>Please fill all relevent sections.</em></p>
         <fieldset>
@@ -80,14 +80,14 @@
                     <label for="saved-no">No</label>
                     <input type="radio" id="saved-no" name="salvation" value="no">
                 </fieldset>
-                <fieldset>
+                <fieldset id="baptism">
                     <legend>Are you Baptised?</legend>
                     <label for="baptism-yes">Yes</label>
                     <input type="radio" id="baptism-yes" name="baptism" value="yes" required>
                     <label for="baptism-no">No</label>
                     <input type="radio" id="baptism-no" name="baptism" value="no">
                 </fieldset>
-                <fieldset>
+                <fieldset id="retreat-specific">
                     <legend>Retreat Specific Questions</legend>
                     <label for="hearsay">How did you hear about us?</label>
                     <select id="hearsay" name="hearsay">
@@ -98,7 +98,7 @@
                         <option value="church-services">Church Service</option>
                         <option value="other">Other</option>
                     </select>
-                    <fieldset>
+                    <fieldset id="lodging-arrangements">
                         <legend>Will this be your first Youth Retreat?</legend>
                     <label for="first-time-yes">Yes</label>
                     <input type="radio" id="first-time-yes" name="first-time-attendee" value="yes" required>

@@ -22,6 +22,7 @@ h1 {
 }
 #contact-section {
     padding: 1em;
+    border-bottom: solid black;
 }
 #contact-info {
     text-align: center;
@@ -46,4 +47,25 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: rgb(91, 8, 8);
     color: white;
+}
+fieldset {
+    border: none; 
+}
+#emergency-contact {
+    border-bottom: solid black;
+}
+#questionaire {
+    border-bottom: solid black;
+}
+#retreat-specific {
+    border-bottom: solid black;
+}
+#bapstism {
+    border-bottom: solid black;
+}
+input:valid {
+    border-color: green;
+}
+input:invalid {
+    border-color: red;
 }
