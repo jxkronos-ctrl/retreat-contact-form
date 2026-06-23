@@ -39,15 +39,16 @@
                 <option value="friend">Friend</option>
                 <option value="other">Other</option>
             </select>
-        </fieldset id="questionaire">
+        <fieldset id="questionaire">
         <h2>Questionaire</h2>
         <p class="questionaire-prompt"><em>Please fill all relevent sections.</em></p>
         <fieldset>
             <legend>Do you currently have a home Church that you attend?</legend>
+            <input type="radio" id="home-church-yes" name="home-church" value="yes" required>
             <label for="home-church-yes">Yes</label>
-             <input type="radio" id="home-church-yes" name="home-church" value="yes" required>
-             <label for="home-church-no">No</label>
              <input type="radio" id="home-church-no" name="home-church" value="no">
+             <label for="home-church-no">No</label>
+             
             <label for="if-yes">If yes, what is the name of your home church?</label>
             <input type="text" id="if-yes" name="if-yes">
             <label for="if-no">If no, why not?</label>
@@ -66,26 +67,29 @@
                 </fieldset>
                 <fieldset>
                     <legend>Are you involved in any ministries?</legend>
+                 <input type="radio" id="active-yes" name="activity" value="yes"required>   
                 <label for="active-yes">Yes</label>
-                <input type="radio" id="active-yes" name="activity" value="yes"required>
-                <label for="active-no">No</label>
                 <input type="radio" id="active-no" name="activity" value="no">
+                <label for="active-no">No</label>
+                
                 <label for="active-details">If yes, please share your ministry experienc below.</label>
                 <textarea id="active-details" name="activity-details" rows="3" cols="45"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Do you have a personal relationship with Jesus Christ?</legend>
-                    <label for="saved-yes">Yes</label>
                     <input type="radio" id="saved-yes" name="salvation" value="yes" required>
+                    <label for="saved-yes">Yes</label>
+                   <input type="radio" id="saved-no" name="salvation" value="no">
                     <label for="saved-no">No</label>
-                    <input type="radio" id="saved-no" name="salvation" value="no">
+                    
                 </fieldset>
                 <fieldset id="baptism">
                     <legend>Are you Baptised?</legend>
-                    <label for="baptism-yes">Yes</label>
                     <input type="radio" id="baptism-yes" name="baptism" value="yes" required>
+                    <label for="baptism-yes">Yes</label>
+                   <input type="radio" id="baptism-no" name="baptism" value="no">
                     <label for="baptism-no">No</label>
-                    <input type="radio" id="baptism-no" name="baptism" value="no">
+                    
                 </fieldset>
                 <fieldset id="retreat-specific">
                     <legend>Retreat Specific Questions</legend>
@@ -100,10 +104,11 @@
                     </select>
                     <fieldset id="lodging-arrangements">
                         <legend>Will this be your first Youth Retreat?</legend>
+                     <input type="radio" id="first-time-yes" name="first-time-attendee" value="yes" required>   
                     <label for="first-time-yes">Yes</label>
-                    <input type="radio" id="first-time-yes" name="first-time-attendee" value="yes" required>
-                    <label for="first-time-no">No</label>
                     <input type="radio" id="first-time-no" name="first-time-attendee" value="no">
+                    <label for="first-time-no">No</label>
+                    
                     <fieldset>
                         <legend>Will you be driving or boarding our coach bus?</legend>
                         <select id=transportation name="transportation">
